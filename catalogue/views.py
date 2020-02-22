@@ -1,3 +1,12 @@
 from django.shortcuts import render
+from .models import Good
 
-# Create your views here.
+
+def index(request):
+    data = dict()
+    goods = Good.objects.all()
+    data['goods'] = goods
+    return render(request, 'catalogue/index.html', context=data)
+
+
+
