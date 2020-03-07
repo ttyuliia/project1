@@ -54,7 +54,7 @@
 	  <div class="container">
 			 <div class="header">
 			       <div class="logo">
-						 <a href="index.html"><img src="{% static 'images/logo.png' %}" width="70" height="70" aria-colspan="11" align="left" alt=""/></a>
+						 <a href="/"><img src="{% static 'images/logo.png' %}" width="70" height="70" aria-colspan="11" align="left" alt=""/></a>
 				   </div>
 				  <div class="top-nav">
 						<label class="mobile_menu" for="mobile_menu">
@@ -68,29 +68,15 @@
 								    <li><a href="bicycles.html">Кроп-худи</a></li>
 									<li><a href="bicycles.html">Футболки</a></li>
 								    <li><a href="bicycles.html">Свитшоты</a></li>
-
 							  </ul>
 						  </li>
-						  <li class="dropdown1"><a href="parts.html">Special</a>
+						  <li class="dropdown1"><a href="/catalogue">Особенное</a>
 							 <ul class="dropdown2">
 									<li><a href="parts.html">CoupleGoals</a></li>
-									<li><a href="parts.html">Другое</a></li>
+									<li><a href="parts.html">FriendshipGoals</a></li>
 							  </ul>
 						 </li>
-						 <li class="dropdown1"><a href="accessories.html">ACCESSORIES</a>
-							 <ul class="dropdown2">
-									<li><a href="accessories.html">LOCKS</a></li>
-										<li><a href="accessories.html">HELMETS</a></li>
-										<li><a href="accessories.html">ARM COVERS</a></li>
-										<li><a href="accessories.html">JERSEYS</a></li>
-							  </ul>
-						 </li>
-						 <li class="dropdown1"><a href="404.html">Вход</a>
-							 <ul class="dropdown2">
-									<li><a href="404.html"></a></li>
-									<li><a href="404.html">BOTTLE CAGE</a></li>
-									<li><a href="404.html">TRUCK GRIP</a></li>
-							  </ul>
+						 <li class="dropdown1"><a href="">Вход</a>
 						 </li>
 						  <a class="shop" href="/cart"><img src="{% static 'images/cart.png' %}" alt=""/></a>
 					  </ul>
@@ -108,7 +94,7 @@
 							    <li><h1>КРОП-ХУДИ</h1></li>
 						  </ul>
 						  <p>'cause <span>you </span>'re <span>HOT</span></p>
-						  <a class="morebtn" href="bicycles.html">SHOP</a>
+						  <a class="morebtn" href="/catalogue">SHOP</a>
 					  </div>
 				  </div>
 	 </div>
@@ -122,20 +108,13 @@
 <div class="footer">
 	 <div class="container wrap">
 		<div class="logo2">
-			 <a href="index.html"><img src="{% static 'images/logo.png' %}" width="65" height="65" alt=""/></a>
-		</div>
-		<div class="ftr-menu">
-			 <ul>
-				 <li><a href="bicycles.html">BICYCLES</a></li>
-				 <li><a href="parts.html">PARTS</a></li>
-				 <li><a href="accessories.html">ACCESSORIES</a></li>
-				 <li><a href="404.html">EXTRAS</a></li>
-			 </ul>
+			 <a href="/"><img src="{% static 'images/logo.png' %}" width="65" height="65" alt=""/></a>
 		</div>
 		<div class="clearfix"></div>
 	 </div>
 </div>
 <!---->
+		{% block page_script %}{% endblock page_script %}
 
 </body>
 </html>

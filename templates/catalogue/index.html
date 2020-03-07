@@ -18,17 +18,21 @@
 					 <p class="product-category">{{ x.category.name }}</p>
 					 <h3 class="product-name"><a href="#">{{ x.name }}</a></h3>
 					 <h4 class="product-price">{{ x.price }} uah.</h4>
-				 </div>
-
+				 	</div>
+				</div>
 						 <div class="bike-cart">
-							 <a class="buy" href="single.html">BUY NOW</a>
+							 <button class="buy">В корзину</button>
 						 </div>
+				 			 <input type="hidden" value="{{ x.id }}">
+			             </div>
 						 <div class="clearfix"></div>
-					 </div>
+		 </div>
 					 <div class="fast-viw">
 							<a href="single.html">Quick View</a>
 					 </div>
 				 </div></a>
+			     <div style="clear: both"></div>
+
 
 			 {% endfor %}
 
@@ -40,5 +44,5 @@
 {% endblock content %}
 
 {% block page_script %}
-	<script src="{% static 'js/catalog.js' %}"></script>
+	<script src="{% static 'js/catalogue.js' %}"></script>
 {% endblock page_script %}

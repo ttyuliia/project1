@@ -1,10 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Cart</title>
-</head>
+{% extends 'layouts/base.html' %}
+
+
+{% block title %}Home{% endblock title %}
+
+
+{% block content %}
+{% load static %}
+
 <body>
 
+<div class="cart">
+	 <div class="container">
+		 <div class="cart-top">
+			<a href="/"><< домой</a>
+		 </div>
+
+		 <div class="col-md-9 cart-items">
+			 <h2>Моя Корзина (2)</h2>
+				<script>$(document).ready(function(c) {
+					$('.close1').on('click', function(c){
+						$('.cart-header').fadeOut('slow', function(c){
+							$('.cart-header').remove();
+						});
+						});
+					});
+			   </script>
+			 <div class="cart-header">
+				 <div class="close1"> </div>
+				 <div class="cart-sec">
+						<div class="cart-item cyc">
+							 <img src="{% static 'images/bik6.jpg' %}"/>
+						</div>
+					   <div class="cart-item-info">
+							 <h3>MOUNTAIN HOPPER(XS R034)<span>Model No: 3578</span></h3>
+							 <h4><span> UAH ₴ </span>500</h4>
+							 <p class="qty">Qty ::</p>
+							 <input min="1" type="number" id="quantity" name="quantity" value="1" class="form-control input-small">
+					   </div>
+					   <div class="clearfix"></div>
+						<div class="delivery">
+							 <span>Доставка во все страны мира</span>
+							 <div class="clearfix"></div>
+				        </div>
+				  </div>
+			 </div>
+			 <script>$(document).ready(function(c) {
+					$('.close2').on('click', function(c){
+							$('.cart-header2').fadeOut('slow', function(c){
+						$('.cart-header2').remove();
+					});
+					});
+					});
+			 </script>
+			 <div class="cart-header2">
+				 <div class="close2"> </div>
+				  <div class="cart-sec">
+						<div class="cart-item">
+							 <img src="{% static 'images/a3.JPG' %}"/>
+						</div>
+					   <div class="cart-item-info">
+							 <h3>RIDE HELMET<span>Model No: 8768</span></h3>
+							 <h4><span>UAH ₴ </span>500.00</h4>
+							 <p class="qty">Qty ::</p>
+							 <input min="1" type="number" id="quantity" name="quantity" value="1" class="form-control input-small">
+					   </div>
+					   <div class="clearfix"></div>
+						<div class="delivery">
+							 <span>Доставка во все страны мира</span>
+							 <div class="clearfix"></div>
+				        </div>
+				  </div>
+			  </div>
+		 </div>
+
+		 <div class="col-md-3 cart-total">
+			 <a class="continue" href="/catalogue">Вернуться к каталогу</a>
+			 <h4 class="last-price">Всего</h4>
+			 <span class="total final">1000.00</span>
+			 <div class="clearfix"></div>
+			 <a class="order" href="#">Заказать</a>
+         </div>
+	 </div>
+</div>
+
 </body>
-</html>
+
+
+
+
+{% endblock content %}

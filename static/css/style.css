@@ -340,7 +340,7 @@ select{
 }
 /*--contact--*/
 .contact{
-	background:url(../images/contact.jpg) no-repeat 0px 0px;
+	background:url(../images/contact.PNG) no-repeat 0px 0px;
 	min-height:560px;
 	background-size:cover;
 	text-align:center;
@@ -388,8 +388,8 @@ select{
 	height:170px;
 }
 .contact form input[type="submit"] {
-  color: #fff;
-  background: #b7b7b7;
+  color: #FE2EF7;
+  background: black;
   font-size: 1em;
   font-weight: 400;
   text-decoration: none;
@@ -406,8 +406,8 @@ select{
   -ms-transition: 0.5s all ease;
 }
 .contact form input[type="submit"]:hover{
-	background:#000;
-	color:#fcff19;
+	background:#101373;
+	color:white;
 }
 /*--footer--*/
 .footer{
@@ -481,7 +481,7 @@ select{
 	display:block;
 }
 .bike:hover{
-	background:#fcff19;
+	background:#9590d6;
 }
 .bike img{	
 	width:100%;
@@ -494,7 +494,7 @@ select{
 	 text-align:center;
 }
 .bike-cost{
-	background:#b7b7b7;
+	background:#9590d6;
 	padding:10px 1em;
 }
 .bike-mdl{
@@ -1227,11 +1227,11 @@ p.qty {
 	float:right;
 }
 a.continue{
-	background:orange;
+	background:black;
 	padding:10px 1.5em;
 	border-radius:7px;
 	font-size:1em;
-	color:#fff;
+	color:#FE2EF7;
 	text-decoration:none;
 	display: block;
    font-weight: 600;  
@@ -1240,7 +1240,7 @@ a.continue{
    margin: 0px auto 3em auto;
 }
 a.continue:hover{
-	background:#333;
+	background:#101373;
 }
 .price-details{
 	border-bottom:1px solid;
@@ -1278,11 +1278,11 @@ h4.last-price{
   border-left: 1px solid;
 }
 a.order {
-  background:#333;
+  background:black;
   padding: 10px 1.5em;
   border-radius: 7px;
   font-size: 1em;
-  color: #fff;
+  color: #FE2EF7;
   text-decoration: none;
   display: block;
   font-weight: 600;
@@ -1291,7 +1291,7 @@ a.order {
   margin: 3em auto 0 auto;
 }
 a.order:hover{
-	background:orange;
+	background:#101373;
 }
 .total-item{
 	margin-top:2em;
